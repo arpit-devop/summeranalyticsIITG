@@ -87,3 +87,59 @@ Comparison between baseline and dynamic models
 
 Interactive legend + filtering using Bokeh
 
+Architecture Diagram Components (for All 3 Models)
+
+1. Input Layer
+Real-Time Data Stream (Pathway)
+
+parking_stream.csv
+
+2. Preprocessing
+Timestamp Parser
+
+Feature Extractor
+
+Day Window Creator
+
+3. Model 1: Baseline Linear Model
+Occupancy
+
+Capacity
+
+Linear Pricing Logic
+
+4. Model 2: Demand-Based Model
+Occupancy
+
+Capacity
+
+Queue Length
+
+Traffic Condition
+
+Special Day
+
+Vehicle Type
+
+Demand Function
+
+Normalized Demand
+
+Demand-Based Pricing Logic
+
+5. Model 3: Competitive Pricing Model
+Latitude / Longitude
+
+Nearby Lot Finder
+
+Simulated Competitor Price
+
+Competition-Based Price Adjuster
+
+6. Output Layer
+Price Output CSV
+
+Real-Time Visualizer (Bokeh + Panel)
+
+Report-Ready CSV for Plots
+
